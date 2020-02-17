@@ -1,4 +1,4 @@
-FROM amazonlinux:2
+FROM docker:19
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
