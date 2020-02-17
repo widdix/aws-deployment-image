@@ -1,2 +1,3 @@
 # aws-deployment-image
-Docker image for AWS deployment
+
+Docker image for AWS deployment.

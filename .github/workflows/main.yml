@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+    - master
+name: deploy
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: 'Build and Publish'
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Deploy
+      uses: ./.github/actions/docker/
+      with:
+        username: ${{ secrets.GIT_USERNAME }}
+        password: ${{ secrets.GIT_PASSWORD }}
