@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ex
 
+echo "test"
+
 echo ${INPUT_PASSWORD} | docker login -u ${INPUT_USERNAME} --password-stdin
 
 GIT_HASH=$(git rev-parse --short "$GITHUB_SHA")
