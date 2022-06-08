@@ -13,5 +13,5 @@ jobs:
     - name: Deploy
       uses: ./.github/actions/docker/
       with:
-        username: ${{ secrets.GITHUB_USERNAME }}
-        password: ${{ secrets.GITHUB_PASSWORD }}
+        username: hellomichibye
+        password: ${{ secrets.DOCKER_API_KEY }}
